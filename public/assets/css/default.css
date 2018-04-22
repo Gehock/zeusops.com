@@ -1,0 +1,306 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    background-color: black;
+}
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+
+/* image preloads, THIS METHOD DOESNT WORK! Whenever you hover over the icons in the navbar, the image has to load.. Triggers me */
+#preload-01 { background: url("/content/img_logo_arma_black.png") no-repeat -9999px -9999px; }
+#preload-02 { background: url("/content/img_logo_teamspeak_black.png") no-repeat -9999px -9999px; }
+#preload-03 { background: url("/content/img_logo_discord_black.png") no-repeat -9999px -9999px; }
+#preload-04 { background: url("/content/img_logo_steam_black.png") no-repeat -9999px -9999px; }
+#preload-05 { background: url("/content/img_logo_twitter_black.png") no-repeat -9999px -9999px; }
+#preload-06 { background: url("/content/img_logo_facebook_black.png") no-repeat -9999px -9999px; }
+#preload-07 { background: url("/content/img_logo_paypal_black.png") no-repeat -9999px -9999px; }
+
+
+
+/* styles */
+.style-main {
+    background-color: black;
+    color: white;
+}
+.style-default {
+    background-color: white;
+    color: black;
+}
+.style-alt {
+    background-color: lightgray;
+    color: black;
+}
+
+
+
+/* common boxes */
+.blackBar {
+    height: 100px;
+}
+.anchor {
+    padding: 40px;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+
+
+
+/* navbar */
+#navbarMain {
+    margin: 0px;
+    padding: 0px 40px;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+#navbarMainBrand {
+    padding: 20px;
+    margin: 0px;
+    height: 100%;
+}
+#logo {
+    height: 100%;
+}
+#navbarMainButton {
+    padding: 20px;
+    margin: 0px;
+    height: 100%;
+}
+.navbarMainNav {
+    padding: 2rem;
+    margin: 0px;
+    height: 100%;
+}
+#navbarMainNavLeft {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}
+.navbarMainNav li, a {
+    margin: 0px;
+    height: 100%;
+
+    line-height: unset !important;
+    color: white;
+    font-size: 100%;
+}
+.navbar-nav li a:hover {
+    background-color: #fff !important;
+}
+
+
+
+/* Icons */
+.iconSocial .icon{
+    height: 100%;
+    padding: 10px;
+}
+.iconSocial {
+    padding: 0px !important;
+}
+#iconSocialUnits:hover img {
+    content:url("/content/img_logo_arma_black.png");
+}
+#iconSocialTeamspeak:hover img {
+    content:url("/content/img_logo_teamspeak_black.png");
+}
+#iconSocialDiscord:hover img {
+    content:url("/content/img_logo_discord_black.png");
+}
+#iconSocialSteam:hover img {
+    content:url("/content/img_logo_steam_black.png");
+}
+#iconSocialTwitter:hover img {
+    content:url("/content/img_logo_twitter_black.png");
+}
+#iconSocialFacebook:hover img {
+    content:url("/content/img_logo_facebook_black.png");
+}
+#iconSocialPaypal:hover img {
+    content:url("/content/img_logo_paypal_black.png");
+}
+
+
+
+/* Carousel */
+#carouselMain {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+.carousel-inner .active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-inner .carousel-image {
+    object-fit: cover;
+    height: 100% !important;
+    max-height: unset !important;
+    max-width: unset !important;
+    min-width: 100%;
+    min-height: 100%;
+}
+.carousel-indicators .active {
+    background-color: white !important;
+}
+
+
+
+/* Servers */
+.serverColumn {
+    border:1px solid black;
+    height: 500px;
+}
+
+
+
+/* Footer */
+#footer {
+    padding: 35px;
+}
+#iconBackToTop {
+    font-size: 30px;
+}
+
+
+
+/* Loose css */
+.glyphicon {
+    font-size: 20px;
+}
+.icon {
+    color: white !important;
+    border-color: white !important;
+}
+.slideanim {
+    visibility: hidden;
+}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #navbarMain {
+        padding: 0px 25px;
+    }
+
+    #navbarMainBrand {
+        padding: 15px;
+    }
+
+    #navbarMainButton {
+        padding: 15px;
+    }
+    
+    .navbarMainNav {
+        padding: unset;
+        height: unset;
+    }
+
+    #navbar {
+        background-color: rgba(0, 0, 0, 0.9);
+        max-height: unset;
+    }
+    .navbar-nav li a {
+        text-align: center;
+    }
+    
+    .navbarMainNavRight {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .blackBar {
+        height: 66px;
+    }
+
+    #footer {
+        padding: 0px 25px;
+    }
+
+    #iconBackToTop {
+        font-size: 20px;
+        padding: 23px;
+    }
+
+
+
+    /* stuff to make the navbar responsive at given size*/
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
