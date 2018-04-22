@@ -21,17 +21,6 @@ h4 {
 
 
 
-/* image preloads, THIS METHOD DOESNT WORK! Whenever you hover over the icons in the navbar, the image has to load.. Triggers me */
-#preload-01 { background: url("/content/img_logo_arma_black.png") no-repeat -9999px -9999px; }
-#preload-02 { background: url("/content/img_logo_teamspeak_black.png") no-repeat -9999px -9999px; }
-#preload-03 { background: url("/content/img_logo_discord_black.png") no-repeat -9999px -9999px; }
-#preload-04 { background: url("/content/img_logo_steam_black.png") no-repeat -9999px -9999px; }
-#preload-05 { background: url("/content/img_logo_twitter_black.png") no-repeat -9999px -9999px; }
-#preload-06 { background: url("/content/img_logo_facebook_black.png") no-repeat -9999px -9999px; }
-#preload-07 { background: url("/content/img_logo_paypal_black.png") no-repeat -9999px -9999px; }
-
-
-
 /* styles */
 .style-main {
     background-color: black;
@@ -92,7 +81,8 @@ h4 {
     padding-right: 0px;
     margin: 0px;
 }
-.navbarMainNav li, a {
+.navbarMainNav li,
+.navbarMainNav a {
     margin: 0px;
     height: 100%;
 
@@ -114,26 +104,8 @@ h4 {
 .iconSocial {
     padding: 0px !important;
 }
-#iconSocialUnits:hover img {
-    content:url("/content/img_logo_arma_black.png");
-}
-#iconSocialTeamspeak:hover img {
-    content:url("/content/img_logo_teamspeak_black.png");
-}
-#iconSocialDiscord:hover img {
-    content:url("/content/img_logo_discord_black.png");
-}
-#iconSocialSteam:hover img {
-    content:url("/content/img_logo_steam_black.png");
-}
-#iconSocialTwitter:hover img {
-    content:url("/content/img_logo_twitter_black.png");
-}
-#iconSocialFacebook:hover img {
-    content:url("/content/img_logo_facebook_black.png");
-}
-#iconSocialPaypal:hover img {
-    content:url("/content/img_logo_paypal_black.png");
+.iconSocial:hover img {
+	filter: invert(100%);
 }
 
 
@@ -166,7 +138,15 @@ h4 {
 /* Servers */
 .serverColumn {
     border:1px solid black;
+    background-color: white;
     height: 500px;
+}
+.teamspeak > div {
+    padding: 10px !important;
+}
+.discord {
+    height: 100%;
+    width: calc(100% - 1px);
 }
 
 
