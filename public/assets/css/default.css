@@ -146,7 +146,12 @@ h4 {
 }
 .discord {
     height: 100%;
-    width: calc(100% - 1px);
+    width: calc(100% - 0.5px);
+    margin-top: -10px;
+}
+.discordBackground {
+    height: 10px;
+    background-color: #7289da;
 }
 
 
