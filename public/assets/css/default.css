@@ -311,9 +311,9 @@ h4 {
 
 @media screen and (max-width: 1024px) and (orientation:portrait) {
     .carousel-text h1 {
-        font-size: 6.5vh;
+        font-size: 8vw;
     }
     .carousel-text p {
-        font-size: 2vh;
+        font-size: 4vw;
     }
 }
