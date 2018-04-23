@@ -63,7 +63,7 @@
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            $("#navbarMainBrand, .navbar a, footer a[href='#home']").on('click', function (event) {
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
@@ -98,11 +98,11 @@
     </script>
 </head>
 
-<body>
+<body id="home">
     <!-- NAVIGATION BAR -->
     <nav id="navbarMain" class="navbar navbar-fixed-top blackBar">
         <div class="navbar-header">
-            <a id="navbarMainBrand" class="navbar-brand" href="#">
+            <a id="navbarMainBrand" class="navbar-brand" href="#home">
                 <img id="logo" src="/content/img_logo_zeusops_white.png" alt="Logo">
             </a>
             <button id="navbarMainButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -306,7 +306,7 @@
     </div> -->
 
     <footer id="footer" class="container-fluid text-center style-main blackBar">
-        <a href="#" title="To Top">
+        <a href="#home" title="To Top">
             <span id="iconBackToTop" class="glyphicon glyphicon-chevron-up icon"></span>
         </a>
     </footer>
