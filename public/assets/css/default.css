@@ -117,11 +117,22 @@ h4 {
     margin: 0px;
     height: 100%;
 }
-.carousel-inner .carousel-image {
+.carousel-image {
     object-fit: cover;
     height: 100% !important;
     min-width: 100%;
     min-height: 100%;
+}
+.carousel-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50%;
+    padding: 2%;
+    margin: 0%;
+    
+    position: absolute;
+    /* left: 50%;
+    bottom: -5%;
+    transform: translate(-50%, -50%); */
 }
 .carousel-inner .active {
     display: flex;
@@ -249,6 +260,15 @@ h4 {
         font-size: 20px;
         padding: 23px;
     }
+    .carousel-text {
+        width: 70%;
+    }
+    .carousel-text h1 {
+        font-size: 6vw;
+    }
+    .carousel-text p {
+        font-size: 2.1vw;
+    }
 
 
 
@@ -286,5 +306,14 @@ h4 {
     }
     .collapse.in{
         display:block !important;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation:portrait) {
+    .carousel-text h1 {
+        font-size: 6.5vh;
+    }
+    .carousel-text p {
+        font-size: 2vh;
     }
 }
