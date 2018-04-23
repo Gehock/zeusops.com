@@ -130,10 +130,11 @@ h4 {
     margin: 0%;
     
     position: absolute;
-    /* bottom: calc(2% + 47px); */
     bottom: 67px;
 }
-.carousel-inner .active {
+.carousel-inner .active,
+.carousel-inner .prev,
+.carousel-inner .next {
     display: flex;
     justify-content: center;
     align-items: center;
