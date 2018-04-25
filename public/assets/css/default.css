@@ -240,7 +240,6 @@ h4 {
     }
     .navbarMainNav {
         padding: unset;
-        height: unset;
         border: unset;
     }
     #navbar {
@@ -261,7 +260,7 @@ h4 {
     }
     #navbarMainNavRight li {
         float: left;
-        width: calc( 100% / 7);
+        width: calc( (100% - 0.1px) / 7); /* -0.1px fixes Edge bug where elements dont fit */
         min-width: 75px;
     }
     #navbarMainNavRight li a{
