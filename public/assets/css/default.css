@@ -135,6 +135,10 @@ h4 {
     position: absolute;
     bottom: 67px;
 }
+.carousel-inner,
+.carousel .item {
+    height: 100%;
+}
 .carousel-inner .active,
 .carousel-inner .prev,
 .carousel-inner .next {
