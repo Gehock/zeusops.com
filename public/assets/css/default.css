@@ -84,12 +84,12 @@ h4 {
 .navbarMainNav li,
 .navbarMainNav a {
     height: 100%;
-    width: 75px; /* firefox hotfix */
-    /* TODO: center the image! */
-
     line-height: unset !important;
     color: white;
     font-size: 100%;
+}
+#navbarMainNavRight li {
+    width: 75px;
 }
 .navbar-nav li a:hover {
     background-color: white !important;
@@ -102,6 +102,8 @@ h4 {
 .iconSocial .icon{
     height: 100%;
     padding: 10px;
+    display: block;
+    margin: 0 auto;
 }
 .iconSocial {
     padding: 0px !important;
@@ -246,16 +248,21 @@ h4 {
     .navbar-nav a {
         text-align: center;
     }
+    #navbarMainNavLeft a {
+        height: unset;
+        padding: 19px;
+    }
     #navbarMainNavRight {
         margin: 0px;
     }
     #navbarMainNavRight li {
+        float: left;
         width: calc( 100% / 7);
         min-width: 75px;
-        float: left;
     }
-    #navbarMainNavRight li a {
+    #navbarMainNavRight li a{
         padding: 5px !important;
+        width: 100%;
     }
     
 
