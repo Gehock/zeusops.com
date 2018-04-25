@@ -1,1 +1,1 @@
-Website for https://www.zeusops.com/
+Website for [Zeus Operations](https://www.zeusops.com/).
