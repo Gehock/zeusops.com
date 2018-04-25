@@ -152,6 +152,13 @@ h4 {
 .carousel-indicators .active {
     background-color: white !important;
 }
+.carousel-inner a {
+    color: lightgreen;
+}
+.carousel-inner a:hover {
+    color: green;
+    text-decoration: none;
+}
 
 
 
