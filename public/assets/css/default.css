@@ -61,7 +61,7 @@ h4 {
 #navbarMainBrand {
     padding: 20px;
     margin: 0px;
-    height: 100%;
+    height: 100px;
 }
 #logo {
     height: 100%;
@@ -83,8 +83,9 @@ h4 {
 }
 .navbarMainNav li,
 .navbarMainNav a {
-    margin: 0px;
     height: 100%;
+    width: 75px; /* firefox hotfix */
+    /* TODO: center the image! */
 
     line-height: unset !important;
     color: white;
@@ -226,6 +227,7 @@ h4 {
     }
     #navbarMainBrand {
         padding: 15px;
+        height: 65px;
     }
     #navbarMainButton {
         padding: 15px;
