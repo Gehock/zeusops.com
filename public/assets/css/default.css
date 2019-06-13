@@ -187,8 +187,26 @@ h4 {
 #footer {
     padding: 35px;
 }
+.sponsor {
+    float: left;
+    width: 18em;
+}
+.sponsor a {
+    color: white;
+    padding: 25px 10px 20px 15px;
+    text-decoration: none;
+}
+/* .sponsor a:hover {
+    background-color: white;
+    color: black;
+} */
+.sponsorimage {
+    height: 2em;
+    margin-top: -6%;
+}
 #iconBackToTop {
     font-size: 30px;
+    margin-left: -9em;
 }
 
 
@@ -288,7 +306,9 @@ h4 {
         font-size: 20px;
         padding: 23px;
     }
-
+    .sponsor {
+        margin: 23px;
+    }
 
 
     /* Carousel */
