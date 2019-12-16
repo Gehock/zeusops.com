@@ -7,14 +7,14 @@ body {
 h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: #989898;
     font-weight: 600;
     margin-bottom: 30px;
 }
 h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: #c3c3c3;
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -27,8 +27,8 @@ h4 {
     color: white;
 }
 .style-default {
-    background-color: white;
-    color: black;
+    background-color: 202225;
+    color: white;
 }
 .style-alt {
     background-color: lightgray;
@@ -165,7 +165,7 @@ h4 {
 /* Servers */
 .serverColumn {
     border:1px solid black;
-    background-color: white;
+    /* background-color: white; */
     height: 500px;
 }
 .teamspeak > div {
